@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+.fix_button{
+	margin-right:80px;
+}
+
+.fix_input{
+	width:40px;
+	margin:0 auto;
+}
+
+.fix_show{
+	text-align: center;
+}

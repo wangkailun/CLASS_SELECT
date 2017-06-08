@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.devMode" value="false" />
+<package name="class" extends="struts-default">
+	<action name="Manage" class="com.action.Login" method="execute">
+		<result name="success">/SetInfo.jsp</result>
+		<result name="error">/Error.jsp</result>
+	</action>
+	<action name="GetInfo" class="com.action.GetTeacherInfo" method="execute">
+		<result name="success">/SetInfo.jsp</result>
+		<result name="error">/Error.jsp</result>
+	</action>
+	<action name="DeleteTeacher" class="com.action.GetTeacherInfo" method="DeleteTeacher">
+		<result name="success">/SetInfo.jsp</result>
+		<result name="error">/Error.jsp</result>
+	</action>
+	<action name="SetStudent" class="com.action.GetStudentInfo" method="execute">
+		<result name="success">/SetStuInfo.jsp</result>
+		<result name="error">/Error.jsp</result>
+	</action>
+	<action name="SelectStudent" class="com.action.GetStudentInfo" method="SelectStudent">
+		<result name="success">/SetStuInfo.jsp</result>
+	</action>
+	<action name="DeleteStudent" class="com.action.GetStudentInfo" method="DeleteStudent">
+		<result name="success">/SetStuInfo.jsp</result>
+		<result name="error">/Error.jsp</result>
+	</action>
+</package>
+
+</struts>    

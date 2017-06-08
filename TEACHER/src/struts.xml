@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.devMode" value="false" />
+<package name="class" extends="struts-default">
+	<action name="SetClass" class="com.action.Login" method="execute">
+		<result name="success" >/SetClass.jsp</result>
+		<result name="error" >/Error.jsp</result>
+	</action>
+	<action name="InsertClass" class="com.action.SetClass" method="execute">
+		<result name="success" >/SetClass.jsp</result>
+		<result name="error" >/Error.jsp</result>
+	</action>
+	<action name="DeleteClass" class="com.action.SetClass" method="DeleteClass">
+		<result name="success" >/ShowClass.jsp</result>
+		<result name="error" >/Error.jsp</result>
+	</action>
+	<action name="ScoreClass" class="com.action.ScoreClass" method="execute">
+		<result name="success">/ScoreClass.jsp</result>
+	</action>
+</package>
+
+</struts>    
